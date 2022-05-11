@@ -3,5 +3,30 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// BASE
+@import './base/null-style';
+@import './base/base-style';
+@import './base/variables-color';
+
+// UTILS
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+// COMPONENTS
+@import './components/container';
+@import './components/section-title';
+
+// LAYOUTS
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/problems';
+@import './layouts/how-we-do';
+@import './layouts/program';
+@import './layouts/benefits';
+@import './layouts/about';
+@import './layouts/guarantee';
+@import './layouts/reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
