@@ -1,11 +1,14 @@
 .section__hero {
-    background-image: url(../../src/images/img-desc/Vector1.png);
-    background-size: cover;
-    background-position: left bottom;
+    background-image: url(../../src/images/img-mob/Vector1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left bottom 20px;
+    box-sizing: content-box;
+    
 }
 
 .container__hero{
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 }
 .hero { 
     width: 280px;
@@ -61,6 +64,9 @@
 
 //768 +
 @media screen and (min-width: 768px){
+    .section__hero {
+        background-image: url(../../src/images/img-tab/Vector1.png);
+    }
     .container__hero{
         position: relative;
     }
@@ -91,7 +97,10 @@
 
 //1680 +
 @media screen and (min-width: 1680px) {
-
+    .section__hero {
+        background-image: url(../../src/images/img-desc/Vector1.png);
+        padding-bottom: 40px;
+    }
     .hero{
         width: 560px;
         margin-left: 0;
