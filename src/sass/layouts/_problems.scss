@@ -13,6 +13,7 @@
   &_accent{
     color: var(--accent-color);
   }
+
 }
 
 .problems__list{
@@ -24,18 +25,43 @@
 
 .problems__item{
   margin-bottom: 16px;
+  position: relative;
 
   &::before {
+    position: relative;
+    display: block;
     margin-bottom: 5px;
+    left: 30px;
     counter-increment: section;
     content: "0" counter(section);
     @include fonts(700, 14px, 20px);
     letter-spacing: 0.08em;
     color: var(--accent-color);
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--accent-color);
+
+  }
 }
 
 .problems__subtitle{
   @include fonts(700, 14px, 20px);
   letter-spacing: 0.08em;
+}
+
+//768 +
+@media screen and (min-width: 768px) {
+  
+}
+
+//1680 +
+@media screen and (min-width: 1680px) {
+ 
 }
