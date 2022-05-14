@@ -23,3 +23,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
+    .advantages__subtitle--first::before {
+        background-image: url("../../src/images/icons/adapted.svg");
+    }
+    .advantages__subtitle--second::before {
+        background-image: url("../../src/images/icons/modern.svg");
+    }
+    .advantages__subtitle--third::before {
+        background-image: url("../../src/images/icons/financial.svg");
+    }
