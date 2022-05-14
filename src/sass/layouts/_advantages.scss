@@ -32,3 +32,53 @@
     .advantages__subtitle--third::before {
         background-image: url("../../src/images/icons/financial.svg");
     }
+    @media screen and (min-width: 320px){
+        .advantages__item{
+            width: 280px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .advantages {
+            display: flex;
+            margin-left: -21px;
+            flex-wrap: wrap;
+            &__item {
+                flex-basis: calc((100% - 63px) / 3); 
+                margin-left: 21px;
+            } 
+        }
+        .advantages__item:not(:last-child) {
+                margin-bottom: 0;
+            }
+        .section__advantages{
+                padding-bottom: 80px;
+            }
+    }
+    
+    @media screen and (min-width: 1680px) {
+        .advantages {
+            margin-left: -112px;
+            padding-right: 40px;
+            &__item {
+                @include fonts(700, 20px, 33px);
+                flex-basis: calc((100% - 336px) / 3); 
+                margin-left: 112px;
+            } 
+        }
+        .advantages__subtitle {
+            margin-left: 82px;
+        }
+        .advantages__subtitle::before {
+            width: 100px;
+            height: 102px;
+            }
+            .advantages__subtitle--first::before {
+                background-image: url("../../src/images/icons/adapted-desc.svg");
+            }
+            .advantages__subtitle--second::before {
+                background-image: url("../../src/images/icons/modern-desc.svg");
+            }
+            .advantages__subtitle--third::before {
+                background-image: url("../../src/images/icons/financial-desc.svg");
+            }
+        }
