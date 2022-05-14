@@ -33,7 +33,7 @@
 
   &::before {
     position: relative;
-    display: block;
+    display: inline-block;
     margin-bottom: 5px;
     left: 30px;
     counter-increment: section;
