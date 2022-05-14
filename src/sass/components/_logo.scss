@@ -1,0 +1,59 @@
+.logo {
+  display: inline-block;
+
+  &__light {
+    color: var(--dark-theme-text-color);
+  }
+}
+
+.logo__up,
+.logo__down {
+  display: flex;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+.logo__up {
+  @include fonts(800, 26px, 32px);
+  margin-bottom: 3px;
+}
+
+.logo__down {
+  @include fonts(700, 8px, 10px);
+}
+
+.logo__text-hell {
+  text-transform: capitalize;
+}
+
+.logo__icon-fire {
+  fill: var(--accent-color);
+  margin: 0 4px;
+}
+
+.logo__text-hellish {
+  color: var(--accent-color);
+  padding: 0 2px;
+}
+//-767
+@media screen and (max-width: 767px) {
+  .logo {
+    min-width: 80px;
+    min-height: 29px;
+  }
+  .logo__up,
+  .logo__down {
+    display: none;
+  }
+}
+
+//768 +
+@media screen and (min-width: 768px) {
+  .logo {
+    min-width: 128px;
+    min-height: 45px;
+  }
+  .logo__mobile {
+    display: none;
+  }
+}
