@@ -1,0 +1,25 @@
+.advantages__item {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @include fonts(700, 14px, 23px);
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+}
+.advantages__item:not(:last-child) {
+    margin-bottom: 28px;
+}
+.advantages__subtitle {
+    margin-left: 72px;
+}
+.advantages__subtitle::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 59px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
