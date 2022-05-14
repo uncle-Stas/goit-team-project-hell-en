@@ -1,1 +1,106 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="logo">
+      <a href="./" class="logo__link">
+        <div class="logo__mobile dark-img">
+          <img
+            srcset="
+              ./images/img-mob/logo/logo-dark.png    1x,
+              ./images/img-mob/logo/logo-dark@2x.png 2x
+            "
+            src="./images/img-mob/logo/logo-dark.png"
+            alt="logo"
+            class="logo__img-dark"
+          />
+        </div>
+        <div class="logo__up">
+          <span class="logo__text-hell">Hell</span>
+          <svg class="logo__icon-fire" width="22" height="30">
+            <use href="./images/icons/sprite.svg#icon-fire"></use>
+          </svg>
+          <span class="">En</span>
+        </div>
+        <div class="logo__down">
+          <span class="logo__text-hellish">Hellish&#160;</span>
+          <span class=""> English</span>
+        </div>
+      </a>
+    </div>
+    <ul class="menu-site-nav list">
+      <li class="menu-site-nav__item item">
+        <a class="menu-site-nav__link link current" href="">Studying program</a>
+      </li>
+      <li class="menu-site-nav__item item">
+        <a class="menu-site-nav__link link" href="l">About</a>
+      </li>
+      <li class="menu-site-nav__item item">
+        <a class="menu-site-nav__link link" href="">Training options</a>
+      </li>
+      <li class="menu-site-nav__item item">
+        <a class="menu-site-nav__link link" href="">Contacts</a>
+      </li>
+    </ul>
+    <button type="button" class="menu-site-nav__consultation-btn">
+      <a href="">Consultation by phone</a>
+    </button>
 
+    <button type="button" class="mobile-menu-btn" data-menu-open>
+      <svg class="mobile-menu-btn__icon" width="21" height="12">
+        <use class="mobile-menu-btn__icon-use" href="./images/icons/header.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="mobile-menu-container container">
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="20" height="20">
+          <use href="./images/icons/header.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <div class="logo">
+        <a href="./" class="logo__link">
+          <div class="logo__mobile light-img">
+            <img
+              srcset="
+                ./images/img-mob/logo/logo-light.png    1x,
+                ./images/img-mob/logo/logo-light@2x.png 2x
+              "
+              src="./images/img-mob/logo/logo-light.png"
+              alt="logo"
+              class="logo__img-light"
+            />
+          </div>
+          <div class="logo__up">
+            <span class="logo__text-hell logo__light">Hell</span>
+            <svg class="logo__icon-fire" width="22" height="30">
+              <use href="./images/icons/sprite.svg#icon-fire"></use>
+            </svg>
+            <span class="logo__light">En</span>
+          </div>
+          <div class="logo__down">
+            <span class="logo__text-hellish">Hellish&#160;</span>
+            <span class="logo__light"> English</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="mobile-menu-site-nav list">
+        <li class="mobile-menu-site-nav__item item">
+          <a class="mobile-menu-site-nav__link link current" href="">Studying program</a>
+        </li>
+        <li class="mobile-menu-site-nav__item item">
+          <a class="mobile-menu-site-nav__link link" href="l">About</a>
+        </li>
+        <li class="mobile-menu-site-nav__item item">
+          <a class="mobile-menu-site-nav__link link" href="">Training options</a>
+        </li>
+        <li class="mobile-menu-site-nav__item item">
+          <a class="mobile-menu-site-nav__link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu__consultation-btn">
+        <a href="">Consultation by phone</a>
+      </button>
+    </div>
+  </div>
+</header>
