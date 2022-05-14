@@ -9,7 +9,7 @@
 }
 
 .consultation-btn {
-  height: 48px;
+  //   height: 48px;
   background-color: transparent;
   padding: 0;
   border: 2px solid var(--accent-color);
@@ -19,8 +19,8 @@
 
 .consultation-btn__link {
   color: var(--accent-color);
-  @include fonts(700, 12px, 15px);
-  letter-spacing: 0.08em;
+  //   @include fonts(700, 12px, 15px);
+  //   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -104,8 +104,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 40px 0;
-    height: 139px;
+    // margin: 40px 0;
+    // height: 139px;
   }
 
   .mobile-menu-site-nav__link {
@@ -136,12 +136,22 @@
     padding-top: 20px;
   }
 
-  .menu-site-nav__consultation-btn {
+  .mobile-menu-site-nav {
+    margin: 40px 0;
+    height: 144px;
+  }
+
+  .menu-consultation-btn {
     display: none;
   }
-}
-.consultation-btn {
-  height: 48px;
+
+  .consultation-btn {
+    height: 48px;
+  }
+  .consultation-btn__link {
+    @include fonts(700, 12px, 15px);
+    letter-spacing: 0.08em;
+  }
 }
 
 //768 +
@@ -161,13 +171,37 @@
     top: 50px;
     right: 15px;
   }
-}
-.mobile-consultation-btn {
-  display: none;
-}
-.consultation-btn {
-  height: 48px;
-  width: 260px;
+  .mobile-menu__close-btn {
+    top: 53px;
+  }
+
+  .mobile-menu-site-nav {
+    align-items: flex-start;
+    width: 332px;
+    height: 188px;
+    margin: 80px auto 0 auto;
+  }
+  //   .mobile-menu-site-nav__item {
+  //   }
+  .mobile-menu-site-nav__link {
+    @include fonts(800, 26px, 47px);
+    letter-spacing: 0.03em;
+  }
+
+  .mobile-consultation-btn {
+    display: none;
+  }
+  .consultation-btn {
+    height: 48px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  .consultation-btn__link {
+    @include fonts(700, 14px, 17px);
+    letter-spacing: 0.14em;
+  }
 }
 
 //1680 +
@@ -176,8 +210,46 @@
   .mobile-menu {
     display: none;
   }
+  .consultation-btn {
+    height: 70px;
+    width: 336px;
+    // margin-left: auto;
+    margin-right: 0;
+    margin-left: 40px;
+  }
+
+  .menu-site-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .menu-site-nav__link {
+    color: var(--secondary-text-color);
+    @include fonts(700, 14px, 17px);
+    // letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: color 250ms linear;
+
+    &.current {
+      color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .menu-site-nav__item {
+    // @include fonts(700, 14px, 17px);
+    // color: var(--secondary-text-color);
+    margin-right: 40px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
-.consultation-btn {
-  height: 70px;
-  width: 336px;
-}
+
+// .consultation-btn {
+//   height: 70px;
+//   width: 336px;
+// }
