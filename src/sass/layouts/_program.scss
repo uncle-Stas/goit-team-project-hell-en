@@ -118,3 +118,72 @@
   color: var(--secondary-text-color);
   opacity: 0.5;
 }
+
+//№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№  768 +
+
+@media screen and (min-width: 768px) {
+.section__program {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .container__program {
+    padding-bottom: 90px;
+
+    &::after {
+      right: 0;
+      width: 368px;
+      height: 256px;
+      background-image: url(../images/program-section-img/program-img-tablet.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/program-section-img/program-img-tablet@2x.jpg);
+      }
+    }
+  }
+
+  .section__title_center {
+    text-align: left;
+  }
+
+  .program__main-list {
+    margin-left: 71px;
+    padding-left: 113px;
+
+    &::before {      
+      height: 745px;    
+    }
+
+
+  }
+
+  @media screen and(max-width: 1679px) {
+    .program__second-list {
+    display: flex;
+    }
+
+    .second-list__item {
+      width: 150px;
+    
+      &:not(:last-child) {
+      margin-right: 34px;
+      margin-bottom: 0;
+      }
+    }
+  }
+  
+  .semestr-title {
+
+    &::before {
+      left: -118px;
+    }
+  }
+
+}
+
+//1680 +
+@media screen and (min-width: 1680px) {
+ 
+}
