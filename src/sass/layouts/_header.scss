@@ -9,7 +9,6 @@
 }
 
 .consultation-btn {
-  //   height: 48px;
   background-color: transparent;
   padding: 0;
   border: 2px solid var(--accent-color);
@@ -19,8 +18,6 @@
 
 .consultation-btn__link {
   color: var(--accent-color);
-  //   @include fonts(700, 12px, 15px);
-  //   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -30,9 +27,6 @@
     display: none;
   }
   .mobile-menu-btn {
-    // position: absolute;
-    // top: 50px;
-    // right: 15px;
     background-color: transparent;
     line-height: 0;
     padding: 0;
@@ -90,22 +84,14 @@
     }
   }
   .mobile-menu-container {
-    //   width: 100%;
-    //   height: 100%;
     position: relative;
-    // padding-top: 20px;
-
-    //   padding-left: 20px;
     display: flex;
     flex-direction: column;
-    //   justify-content: space-between;
   }
   .mobile-menu-site-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // margin: 40px 0;
-    // height: 139px;
   }
 
   .mobile-menu-site-nav__link {
@@ -163,11 +149,9 @@
 
   .mobile-menu-container {
     padding-top: 40px;
-    // position: relative;
   }
 
   .mobile-menu-btn {
-    // position: absolute;
     top: 50px;
     right: 15px;
   }
@@ -181,8 +165,6 @@
     height: 188px;
     margin: 80px auto 0 auto;
   }
-  //   .mobile-menu-site-nav__item {
-  //   }
   .mobile-menu-site-nav__link {
     @include fonts(800, 26px, 47px);
     letter-spacing: 0.03em;
@@ -213,7 +195,6 @@
   .consultation-btn {
     height: 70px;
     width: 336px;
-    // margin-left: auto;
     margin-right: 0;
     margin-left: 40px;
   }
@@ -225,7 +206,6 @@
   .menu-site-nav__link {
     color: var(--secondary-text-color);
     @include fonts(700, 14px, 17px);
-    // letter-spacing: 0.02em;
     text-transform: uppercase;
     transition: color 250ms linear;
 
@@ -239,8 +219,6 @@
     }
   }
   .menu-site-nav__item {
-    // @include fonts(700, 14px, 17px);
-    // color: var(--secondary-text-color);
     margin-right: 40px;
 
     &:nth-child(4n) {
@@ -248,8 +226,3 @@
     }
   }
 }
-
-// .consultation-btn {
-//   height: 70px;
-//   width: 336px;
-// }
