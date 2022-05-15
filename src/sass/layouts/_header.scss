@@ -8,17 +8,13 @@
   align-items: center;
 }
 
-.consultation-btn {
-  background-color: transparent;
-  padding: 0;
-  border: 2px solid var(--accent-color);
-  align-items: center;
-  text-align: center;
-}
-
-.consultation-btn__link {
+.consultation__link {
   color: var(--accent-color);
   text-transform: uppercase;
+  display: block;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  text-align: center;
 }
 
 //0-1679
@@ -127,16 +123,15 @@
     height: 144px;
   }
 
-  .menu-consultation-btn {
+  .menu-consultation {
     display: none;
   }
 
-  .consultation-btn {
-    height: 48px;
-  }
-  .consultation-btn__link {
+  .consultation__link {
     @include fonts(700, 12px, 15px);
     letter-spacing: 0.08em;
+    height: 48px;
+    padding: 14px 0;
   }
 }
 
@@ -170,19 +165,18 @@
     letter-spacing: 0.03em;
   }
 
-  .mobile-consultation-btn {
+  .mobile-consultation {
     display: none;
   }
-  .consultation-btn {
+
+  .consultation__link {
+    @include fonts(700, 14px, 17px);
+    letter-spacing: 0.14em;
     height: 48px;
     width: 260px;
     margin-left: auto;
     margin-right: 40px;
-  }
-
-  .consultation-btn__link {
-    @include fonts(700, 14px, 17px);
-    letter-spacing: 0.14em;
+    padding: 15px 0;
   }
 }
 
@@ -192,11 +186,12 @@
   .mobile-menu {
     display: none;
   }
-  .consultation-btn {
+  .consultation__link {
     height: 70px;
     width: 336px;
     margin-right: 0;
     margin-left: 40px;
+    padding: 26px 0;
   }
 
   .menu-site-nav {
