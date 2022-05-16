@@ -206,11 +206,13 @@ color: #FF6B09;
     color: #B9B9B9;
     @media screen and (min-width: 768px)  and (max-width: 1679px) {
         text-align: left;
+       
     }
     @media screen and (min-width: 1680px) {
         font-size: 14px;
         line-height: calc(17/14);
         text-align: left;
+        width: 482px;
     } 
 }
 .slider__content-comment{
