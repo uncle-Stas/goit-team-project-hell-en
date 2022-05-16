@@ -3,9 +3,37 @@
     <div class="about__tablet">
       <h2 id="about" class="section__title about__title">Teacher</h2>
       <picture>
-        <source srcset="./images/img-mob/teachermobile.jpg" media="(max-width: 1678px)" />
-        <source srcset="./images/img-desc/teacherdesctop.jpg" media="(min-width: 1680px)" />
-        <img src="./images/img-mob/teachermobile.jpg" alt="" />
+        <source
+          media="(max-width: 1679px)"
+          srcset="
+            ./images/about-img/teacher-mob-tab.webp    1x,
+            ./images/about-img/teacher-mob-tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1679px)"
+          srcset="
+            ./images/about-img/teacher-mob-tab.jpg    1x,
+            ./images/about-img/teacher-mob-tab@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 1680px)"
+          srcset="
+            ./images/about-img/teacher-desktop.webp    1x,
+            ./images/about-img/teacher-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1680px)"
+          srcset="
+            ./images/about-img/teacher-desktop.jpg    1x,
+            ./images/about-img/teacher-desktop@2x.jpg 2x
+          "
+        />
+        <img src="./images/about-img/teacher-mob-tab.jpg" alt="teacher" />
       </picture>
     </div>
     <div class="about-list__wrapper">
@@ -19,12 +47,20 @@
         </li>
       </ul>
       <p class="about__paragraph">
-        Graduated from the Institute of International Relations of the NAU with a degree in
-        translator-analyst.<br />In spare time takes courses from the best universities in the world
-        on effective teaching and essay writing techniques.<br />Completed: English Grammar and
-        Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to
-        Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching
-        (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).
+        <span class="about__paragraph_brake"
+          >Graduated from the Institute of International Relations of the NAU with a degree in
+          translator-analyst.</span
+        >
+        <span class="about__paragraph_brake"
+          >In spare time takes courses from the best universities in the world on effective teaching
+          and essay writing techniques.</span
+        >
+        <span class="about__paragraph_brake"
+          >Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
+          University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing
+          (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning
+          (University of Houston).</span
+        >
       </p>
       <a class="about__link" href="#">Cambrige English Entry Level Certificate</a>
     </div>
