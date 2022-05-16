@@ -1,0 +1,123 @@
+// .guarantee {
+//     background: #f1f1f1;
+//     padding-top: 40px;
+//     padding-bottom: 40px;
+// }
+.title-guarantee {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.guarantee-list {
+    justify-content: center;
+}
+
+.guarantee-list__container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.guarantee-list__item {
+    text-align: start;
+    padding-left: 29px;
+
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.67;
+        color: #3D3D3D;
+        span {
+            color: var(--accent-color);
+        }
+    &::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 14.5px;
+        height: 20px;
+        background-image: url(../images/garantee-fire-small.svg);
+        background-size: cover;
+        transform: translate(-36px, -1px);
+        background-color: #f1f1f1;
+    }
+        &:not(:last-child) {
+            padding-bottom: 24px;
+            border-left: 1px dashed #b9b9b9;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    .guarantee-list__item {
+        max-width: 558px;
+
+    }
+    .guarantee-list {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .guarantee-list__container {
+        max-width: 270px;
+    }
+        .guarantee {
+            background: #f1f1f1;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .guarantee {
+        background: none;
+    }
+    .guarantee-list__container {
+        width: 559px;
+    }
+    .guarantee-wrapper {
+        width: 704px;
+        background: #f1f1f1;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .guarantee-list__item:not(:last-child) {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .guarantee {
+        background: #f1f1f1;
+        max-width: 1648px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .guarantee-list__container {
+        width: 1090px;
+        background: #f1f1f1;
+            padding-top: 60px;
+            padding-bottom: 60px;
+    }
+    .guarantee-list__item {
+        width: 1080px;
+        font-size: 20px;
+        line-height: 1.4;
+        &::before {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 30px;
+                background-image: url(../images/garantee-fire-big.svg);
+                background-size: cover;
+                transform: translate(-40px, -1px);
+                background-color: #f1f1f1;
+            }
+        
+    }
+
+    .guarantee-wrapper {
+        width: 100%;
+        background: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

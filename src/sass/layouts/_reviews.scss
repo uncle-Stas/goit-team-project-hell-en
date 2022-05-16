@@ -1,30 +1,24 @@
 .reviews {
     width: 100%;
-   margin: 0 auto;
-    
-    margin-bottom: 40px;
+   padding-left: 40px;
+   padding-right: 40px;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
     @media screen and (min-width: 480px)  and (max-width: 768px) {
         width: 480px;
     }
     @media screen and (min-width: 768px)  and (max-width: 1679px) {
         width: 768px;
-        
-        margin-bottom: 40px;
-        
+        padding-left: 32px;
+   padding-right: 32px;
     }
     @media screen and (min-width: 1680px) {
         width: 1680px;
-        
-        margin-bottom: 80px;
+        padding-left: 296px;
+        padding-right: 296px;
     } 
 }
-.reviews__container{
-    @media screen and (min-width: 1680px) {
-       
-        
-       
-    }
-    }
 .reviews__title{
     text-align: center;
     margin-bottom: 24px;
@@ -63,7 +57,7 @@ color: #111518;
     
     }
 @media screen and (min-width: 1680px) {
-    max-width: 1088px;
+    max-width: 1680px;
     background: #FFFFFF;
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         padding-top: 60px;
@@ -81,7 +75,7 @@ color: #111518;
    
 }
 .content {
-    width: 700%;
+    width: 800%;
     display: flex;
 }
 .slider{
@@ -89,9 +83,8 @@ color: #111518;
   
 }
 .slider__content{
-    width: 14.28%;
+    width: 25%;
     display: block;
-
     @media screen and (min-width: 768px)  and (max-width: 1679px) {
         display: flex;
         
@@ -126,9 +119,8 @@ color: #111518;
         color: #436EAB;
         justify-content: center;
         text-align: center;
-        display: inline-block;
         
-        margin-bottom: 24px;
+        margin-bottom: 57px;
         @media screen and (min-width: 768px)  and (max-width: 1679px) {
             margin-bottom: 0px;
         }
@@ -140,7 +132,7 @@ color: #111518;
 .slider-social__icon{
         width: 30px;
         height: 30px;
-        
+        margin-bottom: 57px;
         fill: currentColor;
 }
 .support {
@@ -177,13 +169,11 @@ color: #FF6B09;
 @media screen and (min-width: 768px)  and (max-width: 1679px) {
     font-size: 20px;
     line-height: calc(24/20); 
-    text-align: left;
     
 }
 @media screen and (min-width: 1680px) {
     font-size: 30px;
     line-height: calc(37/30);
-    text-align: left;
 }
 }
 .slider__content-text{
@@ -199,12 +189,11 @@ color: #FF6B09;
     
     color: #B9B9B9;
     @media screen and (min-width: 768px)  and (max-width: 1679px) {
-        text-align: left;
+        
     }
     @media screen and (min-width: 1680px) {
         font-size: 14px;
         line-height: calc(17/14);
-        text-align: left;
     } 
 }
 .slider__content-comment{
@@ -223,13 +212,9 @@ color: #FF6B09;
     color: #3D3D3D;
     outline: none;
     overflow: hidden;
-    @media screen and (min-width: 768px)  and (max-width: 1679px) {
-        text-align: left;
-    }
     @media screen and (min-width: 1680px) {
         font-size: 18px;
         line-height: calc(28/18);
-        text-align: left;
     }
 }
 .reade-button{
@@ -241,98 +226,71 @@ color: #FF6B09;
     line-height: calc(20/12);
     outline: none;
     color: #FF6B09;
-    text-decoration: underline;
     @media screen and (min-width: 1680px) {
         font-size: 18px;
         line-height: calc(28/18);
     }
     
 }
-/*.reade-button:focus ~ .text {height: auto;} */
+.reade-button:focus ~ .text {height: auto;}
 
-
-.slider-prev{
-    border: none;
-    background-color: transparent;
-   position: absolute; 
-   bottom: 10px;
-   color: #FF6B09;
-
-   @media screen and (min-width: 768px)  and (max-width: 1680px) {
-    bottom: 230px;
-      
- }
-     @media screen and (min-width: 1680px) {
-        bottom: 330px; 
-        left: 240px;
-     
- }
-}
-.slider-next{
-    border: none;
-    background-color: transparent;
-    position: absolute; 
-    right: 15px;
-    bottom: 10px;
-    @media screen and (min-width: 768px)  and (max-width: 1680px) {
-        right: 15px;
-        bottom: 230px; 
-          
-     }
-         @media screen and (min-width: 1680px) {
-            right: 0px;
-            left: 1370px;
-            bottom: 330px;  
-         
-     }
-}
-.button__icon-link{
-    color: #FF6B09;
-}
-.button__icon{
-    
-    width: 25px;
-    height: 25px;
-    bottom: 10px;
-    fill: currentColor;
-}
 .navigation {
-   display: flex;
-   margin: 0 auto; 
-   justify-content: center;
-  
+  position: relative;  
+    display: flex;
+  overflow: hidden;
+  justify-content: center;
   @media screen and (min-width: 768px)  and (max-width: 1680px) {
-   margin-top: 20px;  
-   width: 768px;  
-   
+   margin-top: 20px;    
+    margin-bottom: 40px;   
 }
     @media screen and (min-width: 1680px) {
-     
-    margin-top: 40px; 
-    
-    
+    margin-top: 40px;    
+    margin-bottom: 80px;
 }
 
 }
-.navigation-hidden {
-   display: none;
-    @media screen and (min-width: 768px)  and (max-width: 1680px) {
-     display: block; 
-     }
-         @media screen and (min-width: 1680px) {
-    display: block;   
-         
-     }
-}
-
 .navigation__bar{
     width: 54px;
-   
+    height: 54px;
+    margin: 12px;
+    
+
 }
-.navigation__bar + .navigation__bar {
-    margin-left: 10px;
-  }
- 
+
+#controls{ /*положение блока всех управляющих элементов*/
+    display: block;
+height: 50px;
+}
+/*настройка переключения и положения для левой стрелки*/
+#switch1:checked ~ #controls label:nth-child(4), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3){
+
+/* вставить картинку*/
+background-image: url('../images/img-mob/Ellipse.png')no-repeat;/*заливка фона картинкой без повторений*/
+
+display: block;
+height: 68px;
+width: 68px;
+margin-bottom: 20px;
+}
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1){
+ /*заливка фона картинкой без повторений*/
+ background-image: url('../images/img-mob/Ellipse.png')no-repeat;
+   display: block;
+height: 68px;
+width: 68px;
+margin-bottom: 20px;
+}
+
+
+
+
 .slider-input{
     display: none;
 }
@@ -344,22 +302,24 @@ input[name="slider"]{
     margin-left: 0;
 }
 #switch2:checked ~ .s1 {
-    margin-left: -14.28%;
+    margin-left: -25%;
 }
 #switch3:checked ~ .s1 {
-    margin-left: -28.5%;
+    margin-left: -50%;
 }
-#switch4:checked ~ .s1 {
-    margin-left: -42.84%;
+#swich4:checked ~ .s1 {
+    margin-left: -75%;
 }
-#switch5:checked ~ .s1 {
-    margin-left: -57.12%;
+#swich5:checked ~ .s1 {
+    margin-left: -100%;
 }
-#switch6:checked ~ .s1 {
-    margin-left: -71.4%;
+#swich6:checked ~ .s1 {
+    margin-left: -125%;
 }
-#switch7:checked ~ .s1 {
-    margin-left: -85.68%;
+#swich7:checked ~ .s1 {
+    margin-left: -150%;
 }
-
+#swich8:checked ~ .s1 {
+    margin-left: -175%;
+}
 
