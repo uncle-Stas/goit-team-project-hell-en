@@ -20,13 +20,11 @@
         margin-bottom: 20px;
 }
 .about-list {
-    padding-left: 20px;
+    padding-left: 30px;
     height: 179px;
     margin-bottom: 68px;
 }
-.about-list__wrapper {
-    max-width: 402px;
-}
+
 .about-list__item {
     font-style: normal;
         font-weight: 600;
@@ -47,7 +45,7 @@
                 height: 14px;
                 background-image: url(../images/small-rexana.svg);
                 background-size: cover;
-                transform: translate(-30px, 10px);
+                transform: translate(-38px, 10px);
         }
 }
 .about__paragraph {
@@ -68,6 +66,12 @@
                 transform: translate(0px, -20px);
         }
 }
+
+.about__paragraph_brake{
+    display: block;
+
+}
+
 .about__link {
     font-style: normal;
         font-weight: 500;
@@ -80,11 +84,14 @@
     .about__container {
         display: flex;
     }
+        .about-list__wrapper {
+            max-width: 417px;
+        }
     .about__title {
         margin-bottom: 40px;
     }
     .about-list__wrapper {
-        margin-left: 60px;
+        margin-left: 78px;
         margin-top: 72px;
     }
     .about-list {
@@ -96,7 +103,7 @@
         font-size: 12px;
         line-height: 1.3;
         &::before {
-            transform: translate(-30px, 0px);
+            transform: translate(-38px, 0px);
         }
     }
     .about__subtitle {
@@ -104,6 +111,8 @@
     }
     .about__paragraph {
         margin-bottom: 24px;
+        font-size: 11px;
+        line-height: 2;
     }
 }
 
@@ -129,7 +138,7 @@
     }
     .about-list {
         margin-top: 32px;
-        max-width: 530px;
+        max-width: 550px;
         margin-right: 0;
         margin-bottom: 60px;
     }
@@ -146,8 +155,13 @@
     .about__paragraph {
         font-size: 18px;
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
+
+    .about__paragraph_brake:not(:last-child){
+        margin-bottom: 15px;
+    }
+
     .about__link {
         font-size: 18px;
         line-height: 1.6;
