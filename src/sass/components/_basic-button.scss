@@ -1,0 +1,36 @@
+.basic-button {
+    display: block;
+    width: 248px;
+    height: 48px;
+    border: 2px solid var(--accent-color);
+    background-color: rgba(17, 21, 24, 0.9);
+    color: var(--accent-color);
+    @include fonts(700, 12px, 1.22px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .basic-button {
+        width: 280px;
+        height: 48px;
+        background-color: var(--background-white-color);
+        @include fonts(700, 14px, 1.22px);
+        &:focus, &:hover {
+            box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .basic-button {
+        width: 336px;
+        height: 70px;
+        background-color: var(--background-white-color);
+        @include fonts(700, 14px, 1.22px);
+        &:focus, &:hover {
+            box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        }
+    }
+}
