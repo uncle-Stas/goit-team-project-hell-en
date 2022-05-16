@@ -1,0 +1,139 @@
+.footer {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.logo {
+  max-width: 128px;
+  display: inline-block;
+}
+
+.img-logo {
+  width: 80px;
+  height: 29px;
+}
+
+.footer-tel {
+  padding-top: 21px;
+}
+
+.footer-link-tel::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/phone-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 20px;
+  height: 19px;
+  margin-right: 8px;
+}
+
+.footer-link-tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contact-instagram {
+  padding-top: 21px;
+  display: inline-block;
+}
+
+.footer-contact-item {
+  padding-bottom: 40px;
+}
+
+.footer-container__black {
+  background-color: var(--background-dark-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--secondary-text-color);
+}
+
+// 768px +
+@media screen and (min-width: 768px) {
+  .footer-container__white {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-logo {
+    width: 128px;
+    height: 45px;
+  }
+
+  .footer-contact-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-tel {
+    padding-top: 0px;
+  }
+
+  .footer-contact-instagram {
+    padding-top: 0px;
+  }
+
+  .footer-link-tel {
+    font-size: 20px;
+  }
+
+  .footer-link-tel::after {
+    content: '';
+    border: 0.1px solid var(--secondary-text-color);
+    height: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer-link-tel::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/phone-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+// 1680px +
+@media screen and (min-width: 1680px) {
+  .footer-contact-item {
+    margin: auto;
+  }
+
+  .footer-link-tel {
+    font-size: 30px;
+  }
+
+  .footer-link-tel::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/phone-desk.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 30px;
+    height: 29px;
+    margin-right: 16px;
+  }
+
+  .footer-container__black {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+}
