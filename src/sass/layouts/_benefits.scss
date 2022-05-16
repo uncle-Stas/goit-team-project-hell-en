@@ -1,12 +1,14 @@
 .section__benefits {
   padding-bottom: 0;
   margin-bottom: 40px;
+  margin-top: -1px;
   background-image: linear-gradient(to bottom, var(--background-dark-color) 60%, var(--background-white-color) 60%);
 }
 
 .benefits__title {
   margin-bottom: 32px;
   color: var(--dark-theme-text-color);
+  text-align: left;
 
   @media screen and (max-width: 410px) {
     width: 180px;
