@@ -1,7 +1,7 @@
 .section__benefits {
   padding-bottom: 0;
-  margin-bottom: 40px;
-  margin-top: -1px;
+  padding-bottom: 40px;
+  // margin-top: -1px;
   background-image: linear-gradient(to bottom, var(--background-dark-color) 60%, var(--background-white-color) 60%);
 }
 
@@ -72,8 +72,8 @@
   }
 
   .benefits__list {
-    margin-left: 8px;
-    margin-right: 8px;
+    // margin-left: 8px;
+    // margin-right: 8px;
     padding: 40px 112px 40px 84px;
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@
     position: relative;
     z-index: 5;
     margin-top: -200px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     // background-color: transparent;
     background-image: none;
   }
