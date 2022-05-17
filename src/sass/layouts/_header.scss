@@ -111,7 +111,7 @@
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 20px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .mobile-menu-container {
@@ -139,7 +139,7 @@
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 40px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   .mobile-menu-container {
@@ -197,16 +197,22 @@
   .menu-site-nav {
     display: flex;
     margin-left: auto;
+    min-width: 648px;
+    justify-content: space-between;
+    }
+  .menu-site-nav__item {
+    margin: 0 auto;
   }
-  .menu-site-nav__link {
+    .menu-site-nav__link {
     color: var(--secondary-text-color);
     @include fonts(700, 14px, 17px);
     text-transform: uppercase;
     transition: color 250ms linear;
+           
 
-    &.current {
-      color: var(--accent-color);
-    }
+// &.current {
+//       color: var(--accent-color);
+//     }
 
     &:hover,
     &:focus {
