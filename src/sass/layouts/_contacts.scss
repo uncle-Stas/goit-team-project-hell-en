@@ -1,10 +1,9 @@
 .contact-title-container {
-  padding-top: 40px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .contact-text-container {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .contact-title {
@@ -56,8 +55,8 @@
   border-color: #da0000;
 }
 
-.input-container-name {
-  padding-bottom: 20px;
+.input-name {
+  margin-bottom: 20px;
 }
 
 .contact-btn {
@@ -88,6 +87,7 @@
   background-color: var(--primary-text-color);
   background-size: cover;
   background-position: center;
+  padding-top: 40px;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -103,7 +103,7 @@
   }
 
   .contact-title-container {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .contact-title {
@@ -117,10 +117,10 @@
   }
 
   .contact-text-container {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
-  .input-container {
+  .contact-form {
     text-align: center;
   }
 
@@ -146,9 +146,6 @@
 @media screen and (min-width: 1680px) {
   .contact {
     background-image: url('../images/contact-section/contact-section-desk.png');
-  }
-
-  .contact-title-container {
     padding-top: 80px;
   }
 
@@ -164,7 +161,11 @@
   }
 
   .contact-text-container {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+
+  .input-name {
+    margin-bottom: 32px;
   }
 
   .contact-input {
