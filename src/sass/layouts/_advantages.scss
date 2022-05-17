@@ -31,13 +31,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
-    .advantages__item--first::before {
+    .advantages__item:nth-child(1)::before {
         background-image: url("../../src/images/icons/adapted.svg");
     }
-    .advantages__item--second::before {
+    .advantages__item:nth-child(2)::before {
         background-image: url("../../src/images/icons/modern.svg");
     }
-    .advantages__item--third::before {
+    .advantages__item:nth-child(3)::before {
         background-image: url("../../src/images/icons/financial.svg");
     }
     @media screen and (min-width: 320px){
@@ -86,13 +86,13 @@
             width: 100px;
             height: 102px;
             }
-            .advantages__item--first::before {
+            .advantages__item:nth-child(1)::before {
                 background-image: url("../../src/images/icons/adapted-desc.svg");
             }
-            .advantages__item--second::before {
+            .advantages__item:nth-child(2)::before {
                 background-image: url("../../src/images/icons/modern-desc.svg");
             }
-            .advantages__item--third::before {
+            .advantages__item:nth-child(3)::before {
                 background-image: url("../../src/images/icons/financial-desc.svg");
             }
         }
