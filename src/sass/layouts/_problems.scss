@@ -1,7 +1,7 @@
 .problems__section{
   padding-top: 24px;
-  margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, var(--background-dark-color) 77.6%, var(--background-white-color) 77.6%);
+  padding-bottom: 40px;
+  background-image: linear-gradient(to bottom, var(--background-dark-color) 73%, var(--background-white-color) 73%);
 }
 
 .problems__title{
@@ -63,7 +63,7 @@
 @media screen and (min-width: 768px) {
   .problems__section{
     padding-top: 40px;
-    background-image: linear-gradient(to bottom, var(--background-dark-color) 72.5%, var(--background-white-color) 72.5%);
+    background-image: linear-gradient(to bottom, var(--background-dark-color) 66%, var(--background-white-color) 66%);
   }
 
   .problems__title{
@@ -78,10 +78,16 @@
 
   .problems__item{
     width: 226px;
-    margin-bottom: 24px;
-    margin-right: 30px;
-    &:nth-last-child(-n+2){
-      margin-bottom: 0;
+
+    @media screen and (max-width: 1679px) {
+    
+      &:not(:nth-last-child(-n+2)){
+        margin-bottom: 24px;
+      }
+
+      &:not(:nth-child(2n+2)){
+        margin-right: 30px;
+      }
     }
 
     &::before {
@@ -94,10 +100,10 @@
 @media screen and (min-width: 1680px) {
   .problems__section {
     padding-top: 80px;
-    margin-bottom: 80px;
-    background-image: url(../images/problem-section-bg-fire.svg), linear-gradient(to bottom, var(--background-dark-color) 81%, var(--background-white-color) 81%);
+    padding-bottom: 80px;
+    background-image: url(../images/problem-section-bg-fire.svg), linear-gradient(to bottom, var(--background-dark-color) 72.8%, var(--background-white-color) 72.8%);
     background-repeat: no-repeat;
-    background-position: right 0 bottom 132px, center;
+    background-position: right 0 bottom 209px, center;
   }
 
   .problems__title {
