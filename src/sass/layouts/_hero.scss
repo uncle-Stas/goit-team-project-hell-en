@@ -1,5 +1,5 @@
 .section__hero {
-    background-image: url(../../src/images/img-mob/vector1.png);
+    background-image: url(../../src/images/img-mob/Vector1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: left bottom 20px;
@@ -10,7 +10,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .section__hero {
-    background-image: url(../../src/images/img-mob/vector1@2x.png);
+    background-image: url(../../src/images/img-mob/Vector1@2x.png);
   }
 }
 
@@ -72,14 +72,14 @@
 //768 +
 @media screen and (min-width: 768px){
     .section__hero {
-        background-image: url(../../src/images/img-tab/vector1.png);
+        background-image: url(../../src/images/img-tab/Vector1.png);
     }
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .section__hero {
-            background-image: url(../../src/images/img-tab/vector1@2x.png);
+            background-image: url(../../src/images/img-tab/Vector1@2x.png);
             }
         }
     .container__hero{
@@ -115,7 +115,7 @@
 //1680 +
 @media screen and (min-width: 1680px) {
     .section__hero {
-        background-image: url(../../src/images/img-desc/vector1.png);
+        background-image: url(../../src/images/img-desc/Vector1.png);
         padding-bottom: 40px;
     }
     @media (min-device-pixel-ratio: 2),
@@ -123,7 +123,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .section__hero {
-            background-image: url(../../src/images/img-desc/vector1@2x.png);
+            background-image: url(../../src/images/img-desc/Vector1@2x.png);
             }
         }
     .hero{
