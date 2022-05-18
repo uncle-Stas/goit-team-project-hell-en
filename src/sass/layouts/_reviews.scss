@@ -263,15 +263,15 @@ color: #FF6B09;
     border: none;
     background-color: transparent;
    position: absolute; 
-   bottom: 50px;
+   bottom: 60px;
    color: #FF6B09;
 
    @media screen and (min-width: 768px)  and (max-width: 1680px) {
-    bottom: 230px;
+    bottom: 270px;
       
  }
      @media screen and (min-width: 1680px) {
-        bottom: 330px; 
+        bottom: 400px; 
         left: 240px;
      
  }
@@ -281,16 +281,16 @@ color: #FF6B09;
     background-color: transparent;
     position: absolute; 
     right: 15px;
-    bottom: 50px;
+    bottom: 60px;
     @media screen and (min-width: 768px)  and (max-width: 1680px) {
         right: 15px;
-        bottom: 230px; 
+        bottom: 270px; 
           
      }
          @media screen and (min-width: 1680px) {
             right: 0px;
             left: 1390px;
-            bottom: 330px;  
+            bottom: 400px;  
          
      }
 }
